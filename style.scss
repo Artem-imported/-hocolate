@@ -1,109 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-.workers{
-    justify-content: center;
-    background: #FAFAFA;
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    font-family: Montserrat;
-    & .workers--title{
-        padding-top: 50px;
-    }
-    & .workers--slider__wrapper {
-        overflow: hidden;
-        max-width: 1200px;
-        margin: 0 70px 55px;
-        padding-top: 150px;
-    }
-    & .workers--card__item {
-        height: 200px;
-        max-width: 360px;
-        width: 100%;
-        color: #000000;
-        user-select: none;
-        padding: 35px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 15px;
-        background: rgb(255, 255, 255);
-        border: 1px solid #1111111A;
-        box-shadow: 0px 9.05px 26.57px 0px #D7E4F940;
-    }
-    & .workers--user__name{
-        font-family: Montserrat;
-        font-size: 18px;
-        line-height: 24px;
-        text-align: center;
-        padding-bottom: 24px;
-        margin-top: -70px;
-    }
-    & .workers--user__image{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        margin-bottom: 18px;
-        border: 3px solid #fff;
-        position: relative;
-        top: -80px;
-    }
-    & .workers--card__list .workers--card__item {
-        font-size: 1.15rem;
-        color: #000000;
-        font-weight: 500;
-        margin: 14px 0 40px;
-    }
-    & .workers--user__profession{
-        font-family: Montserrat;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: -0.02em;
-        text-align: center;
-    }
-    & .workers--card__list .workers--card__item .workers--message__button {
-        font-size: 1.25rem;
-        padding: 10px 35px;
-        color: #030728;
-        border-radius: 6px;
-        font-weight: 500;
-        cursor: pointer;
-        background: #fff;
-        border: 1px solid transparent;
-        transition: 0.2s ease;
-    }
-    & .workers--card__list .workers--card__item .workers--message__button:hover {
-        background: rgb(255, 255, 255);
-        border: 1px solid #fff;
-        color: #fff;
-    }
-    & .workers--slider__wrapper .workers--swiper__pagination--bullet {
-        background: #FD9222;
-        height: 13px;
-        width: 13px;
-        opacity: 0.5;
-    }
-    & .workers--slider__wrapper .swiper-pagination-bullet-active {
-        opacity: 1;
-    }
-    & .workers--slider__wrapper .workers--swiper__slide--button {
-        color: #b6b6b6;
-        margin-top: -55px;
-        transition: 0.2s ease;
-    }
-    & .workers--slider__wrapper .workers--swiper__slide--button:hover {
-        color: #FD9222;
-    }
-
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body{
-    height: auto;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.workers{
+    justify-content: center;
+    background: #FAFAFA;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 1136px;
+    padding-bottom: 100px;
 }
+.workers--title{
+    padding-top: 50px;
+}
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+    padding-top: 150px;
+}
+.card-item {
+    height: 200px;
+    max-width: 360px;
+    width: 100%;
+    color: #000000;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #1111111A;
+    box-shadow: 0px 9.05px 26.57px 0px #D7E4F940;
+}
+.user-name{
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 24px;
+    margin-top: -70px;
+}
+.user-image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    border: 3px solid #fff;
+    position: relative;
+    top: -80px;
+}
+.card-list .card-item {
+    font-size: 1.15rem;
+    color: #000000;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+.user-profession{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+.card-list .card-item .message-button {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+.card-list .card-item .message-button:hover {
+    background: rgb(255, 255, 255);
+    border: 1px solid #fff;
+    color: #fff;
+}
+.slider-wrapper .swiper-pagination-bullet {
+    background: #FD9222;
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+}
+.slider-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+.slider-wrapper .swiper-slide-button {
+    color: #b6b6b6;
+    margin-top: -55px;
+    transition: 0.2s ease;
+}
+.slider-wrapper .swiper-slide-button:hover {
+    color: #FD9222;
+}
+dialog{
+    background: #FAFAFA;
+    width: 100%;
+    max-width: 517px;
+    height: 631px;
+    position: relative;
+    top: 194px;
+    left: 18px;
+    border-radius: 15px;
+    opacity: 1px;
+}
+
+.regButton {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 6px 24px;
+    cursor: pointer;
+}
+
+.regButton:hover {
+    background: #ccc;
+}
+
+#window {
+    width: 100%;
+    max-width: 517px;
+    height: 631px;
+    margin: 40px auto;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    z-index: 150; display: none;
+     position: fixed; left: 0;right: 0;top:0;bottom: 0;
+} 
+.form{
+    width: 100%;
+    max-width: 517px;
+    height: 631px; 
+    margin: -15px auto 20px auto; 
+} 
+.input{
+    width: 260px;
+    padding: 5px; 
+    margin-bottom: 10px; 
+} 
+.gray{
+    opacity: 0.8; padding: 15px;
+    background-color: rgb(1, 1, 1); position: fixed; left: 0;right: 0;top:0;bottom: 0; display: none; z-index:100; overflow: auto; 
+} 
