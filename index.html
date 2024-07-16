@@ -9,7 +9,7 @@
     </head>
       <body>
         <section class="workers">
-            <div class="workers--title">
+            <div class="workers-title">
                 <img src="./images/chocolate is loved.svg" alt="">
             </div>
             <div class="swiper">
@@ -46,49 +46,36 @@
                     <div class="swiper-slide-button swiper-button-next"></div>
                 </div>
             </div>
-            <!-- <div>
-                <center><button onclick="show('block')" class="regButton">Регистрация</button>
-                    <video width="100%" src="i/Sun.mp4" autoplay="" loop=""></video>
-                    </center>
-                    <div onclick="show('none')" id="gray" style="display: none;"></div>
-                <div id="window" style="display: none;">
-                    <img class="close" src="i/close.png" alt="" onclick="show('none')">
-                    <div class="form">
-                        <h2>Регистрация</h2>
-                        <form action="index.html" name="f1">
-                            <input type="text" placeholder="Имя" name="name1" class="input">
-                            <input type="text" placeholder="Фамилия" name="name2" class="input">
-                            <input type="email" placeholder="Емеил" name="email1" class="input">
-                            <input type="email" placeholder="Подтвердите адрес Электронной Почты" name="email2" class="input">
-                            <input type="password" placeholder="Пароль" name="pass1" class="input">
-                            <input type="password" placeholder="Подтвердите пароль" name="pass2" class="input">
-                            <input type="tel" placeholder="Мобильный телефон" name="tel" class="input">
-                            <input type="submit" value="Регистрация" name="sab" class="input"> Нажимая «Регистрация», вы подтверждаете, что прочитали и согласны с нашими Условиями Пользования и Политикой Конфиденциальности.
-                        </form>
-                    </div>
-                </div>
-            </div> -->
-            <dialog style="padding: 0">
+
+            <dialog class="dialog" style="padding: 0">
+                <div></div>
                 <div id="modal-box" style="padding: 1rem">
                     <div class="form">
-                        <h2>Регистрация</h2>
-                        <form action="index.html" name="f1">
-                            <input type="text" placeholder="Имя" name="name1" class="input">
-                            <input type="text" placeholder="Фамилия" name="name2" class="input">
-                            <input type="email" placeholder="Емеил" name="email1" class="input">
-                            <input type="email" placeholder="Подтвердите адрес Электронной Почты" name="email2" class="input">
-                            <input type="password" placeholder="Пароль" name="pass1" class="input">
-                            <input type="password" placeholder="Подтвердите пароль" name="pass2" class="input">
-                            <input type="tel" placeholder="Мобильный телефон" name="tel" class="input">
-                            <input type="submit" value="Регистрация" name="sab" class="input"> Нажимая «Регистрация», вы подтверждаете, что прочитали и согласны с нашими Условиями Пользования и Политикой Конфиденциальности.
+                        <h2 class="workers--modal__title"><div>LEAVE A REVIEW ABOUT </div><div style="color: #FD9222;">OUR CHOCOLATE</div></h2>
+                        <form class="workers--modal__form">
+                            <input type="text" placeholder="Name" name="name1" class="input">
+                            <input type="email" placeholder="Email" name="email1" class="input">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" class="ukraine-svg">
+                                <rect width="36" height="24" fill="#0057B7"/>
+                                <rect width="36" height="12" y="12" fill="#FFD700"/>
+                            </svg>
+                            <input type="text" placeholder="ㅤㅤㅤ+380ㅤ|ㅤPhone number" class="phone_mask input">
+                            <textarea class="input comment" placeholder="Enter text" name="" id=""></textarea>
                         </form>
                     </div>
-                    <button id="close-modal-btn">Close</button>
+                    <button class="close-modal-btn" id="close-modal-btn">Send</button>
                 </div>
             </dialog>
-              <button id="show-modal-btn">Show modal</button>              
+              <button class="show-modal-btn" id="show-modal-btn">Leave a review</button>              
         </section>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./script.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
+        <script>
+            $(".phone_mask").mask("ㅤㅤㅤ+380ㅤ|ㅤ99-999-9999");
+        </script>
+        <script src="js/jquery.maskedinput.min.js"></script>
 </body>
 </html>

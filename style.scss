@@ -1,39 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-    display: flex;
-    justify-content: center;
-    overflow-x: hidden;
+@import 'adaptive';
+.workers * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .workers{
+    width: 100%;
     justify-content: center;
     background: #FAFAFA;
     display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1136px;
-    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
 }
-.workers--title{
+.workers-title{
     padding-top: 50px;
 }
 .slider-wrapper {
     overflow: hidden;
-    max-width: 1200px;
+    max-width: 1024px;
+    width: 100%;
     margin: 0 70px 55px;
     padding-top: 150px;
 }
 .card-item {
     height: 200px;
     max-width: 360px;
-    width: 100%;
+    width: 10%;
     color: #000000;
-    user-select: none;
     padding: 35px;
     display: flex;
     flex-direction: column;
@@ -108,16 +102,19 @@ body{
 .slider-wrapper .swiper-slide-button:hover {
     color: #FD9222;
 }
-dialog{
+.dialog{
     background: #FAFAFA;
     width: 100%;
     max-width: 517px;
     height: 631px;
-    position: relative;
-    top: 194px;
-    left: 18px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 15px;
     opacity: 1px;
+    border: 1.5px solid #00000008;
+    box-sizing: border-box;
 }
 
 .regButton {
@@ -146,15 +143,124 @@ dialog{
 .form{
     width: 100%;
     max-width: 517px;
-    height: 631px; 
+    height: auto; 
     margin: -15px auto 20px auto; 
 } 
 .input{
+    box-sizing: border-box;
     width: 260px;
     padding: 5px; 
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
 } 
 .gray{
     opacity: 0.8; padding: 15px;
-    background-color: rgb(1, 1, 1); position: fixed; left: 0;right: 0;top:0;bottom: 0; display: none; z-index:100; overflow: auto; 
+    background-color: rgb(1, 1, 1); 
+    position: fixed; 
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0; 
+    display: none; 
+    z-index:100; 
+    overflow: auto; 
 } 
+.workers--modal__title{
+    width: 298px;
+    height: 56px;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+.workers--modal__form{
+    width: 437px;
+    height: 392px;
+    position: relative;
+    top: 68px;
+    left: 20px;
+    gap: 19px;
+    opacity: 0px;
+}
+.input{
+    width: 437px;
+    height: 66px;
+    padding: 22px 24px 22px 24px;
+    gap: 40px;
+    border-radius: 13px;
+    border: 1.5px solid #00000008;
+    opacity: 0px;
+    box-shadow: 0px 5.44px 5.44px 0px #00000008;
+}
+.input::placeholder{
+    color: #4040404D;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+.phone_mask{
+    color: #4040404D;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+.ukraine-svg{
+    position: absolute;
+    top: 192.5px;
+    left: 25px;
+}
+.comment{
+    height: 137px;
+}
+.show-modal-btn{
+    width: 222px;
+    height: 50px;
+    padding: 14px 40px 14px 40px;
+    gap: 14px;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 128px;
+    background: #FAFAFA;
+}
+.show-modal-btn:hover{
+    background-color: #FD9222;
+    color: #FFFFFF;
+}
+.close-modal-btn{
+    width: 133px;
+    height: 45px;
+    padding: 14px 40px 14px 40px;
+    gap: 14px;
+    border: none;
+    border-radius: 100px;
+    background: #FD9222;
+    position: relative;
+    top: 75px;
+    left: 22.5px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.close-modal-btn:hover{
+    border: 1px solid #FD9222;
+    background: #FFFFFF;
+    color: #000000;
+}
