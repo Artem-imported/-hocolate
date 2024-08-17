@@ -1,4 +1,4 @@
-const swiper = new Swiper('.slider-wrapper', {
+const workers__swiper = new Swiper('.workers__slider--wrapper', {
     loop: true,
     grabCursor: true,
     spaceBetween: 30,
@@ -26,12 +26,6 @@ const swiper = new Swiper('.slider-wrapper', {
       }
     }
 });
-
-
-// function show(state){
-// 	document.getElementById('window').style.display = state;	
-// 	document.getElementById('gray').style.display = state; 		
-// }
 
 const modal = document.querySelector('dialog')
 const modalBox = document.getElementById('modal-box')

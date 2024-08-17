@@ -12,33 +12,33 @@
             <div class="workers-title">
                 <img src="./images/chocolate is loved.svg" alt="">
             </div>
-            <div class="swiper">
-                <div class="slider-wrapper">
-                    <div class="card-list swiper-wrapper">
-                        <div class="card-item swiper-slide">
-                            <img src="./images/Ellipse.png" alt="User Image" class="user-image">
-                            <h2 class="user-name">Victoria Dobrzhanska</h2>
-                            <p class="user-profession">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+            <div class="workers__swiper swiper">
+                <div class="workers__slider--wrapper">
+                    <div class="workers__card--list workers__swiper--wrapper swiper-wrapper">
+                        <div class="workers__card--item workers__swiper-slide swiper-slide">
+                            <img src="./images/Ellipse.png" alt="User Image" class="workers__user-image">
+                            <h2 class="workers__user-name">Victoria Dobrzhanska</h2>
+                            <p class="workers__user-profession">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
                         </div>
-                        <div class="card-item swiper-slide">
-                            <img src="./images/Ellipse1.png" alt="User Image" class="user-image">
-                            <h2 class="user-name">Nazar Babenko</h2>
-                            <p class="user-profession">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+                        <div class="workers__card--item workers__swiper-slide swiper-slide">
+                            <img src="./images/Ellipse1.png" alt="User Image" class="workers__user-image">
+                            <h2 class="workers__user-name">Nazar Babenko</h2>
+                            <p class="workers__user-profession">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
                         </div>
-                        <div class="card-item swiper-slide">
-                            <img src="./images/Ellipse2.png" alt="User Image" class="user-image">
-                            <h2 class="user-name">Olena Kampusch</h2>
-                            <p class="user-profession">Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
+                        <div class="workers__card--item workers__swiper-slide card-item swiper-slide">
+                            <img src="./images/Ellipse2.png" alt="User Image" class="workers__user-image">
+                            <h2 class="workers__user-name">Olena Kampusch</h2>
+                            <p class="workers__user-profession">Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
                         </div>
-                        <div class="card-item swiper-slide">
-                            <img src="./images/Ellipse1.png" alt="User Image" class="user-image">
-                            <h2 class="user-name">Nazar Babenko</h2>
-                            <p class="user-profession">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+                        <div class="workers__card--item workers__swiper-slide card-item swiper-slide">
+                            <img src="./images/Ellipse1.png" alt="User Image" class="workers__user-image">
+                            <h2 class="workers__user-name">Nazar Babenko</h2>
+                            <p class="workers__user-profession">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
                         </div>
-                        <div class="card-item swiper-slide">
-                            <img src="./images/Ellipse2.png" alt="User Image" class="user-image">
-                            <h2 class="user-name">Olena Kampusch</h2>
-                            <p class="user-profession">Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
+                        <div class="workers__card--item workers__swiper-slide card-item swiper-slide">
+                            <img src="./images/Ellipse2.png" alt="User Image" class="workers__user-image">
+                            <h2 class="workers__user-name">Olena Kampusch</h2>
+                            <p class="workers__user-profession">Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -46,26 +46,28 @@
                     <div class="swiper-slide-button swiper-button-next"></div>
                 </div>
             </div>
-
-            <dialog class="dialog" style="padding: 0">
-                <div></div>
-                <div id="modal-box" style="padding: 1rem">
-                    <div class="form">
-                        <h2 class="workers--modal__title"><div>LEAVE A REVIEW ABOUT </div><div style="color: #FD9222;">OUR CHOCOLATE</div></h2>
-                        <form class="workers--modal__form">
-                            <input type="text" placeholder="Name" name="name1" class="input">
-                            <input type="email" placeholder="Email" name="email1" class="input">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" class="ukraine-svg">
-                                <rect width="36" height="24" fill="#0057B7"/>
-                                <rect width="36" height="12" y="12" fill="#FFD700"/>
-                            </svg>
-                            <input type="text" placeholder="ㅤㅤㅤ+380ㅤ|ㅤPhone number" class="phone_mask input">
-                            <textarea class="input comment" placeholder="Enter text" name="" id=""></textarea>
-                        </form>
+            <div class="dialog" style="display: flex; align-items: center; justify-content: center;">
+                <dialog class="workers__dialog" style="padding: 0">
+                    <div></div>
+                    <div id="modal-box" style="padding: 1rem">
+                        <div class="form">
+                            <h2 class="workers--modal__title"><div>LEAVE A REVIEW ABOUT </div><div style="color: #FD9222;">OUR CHOCOLATE</div></h2>
+                            <form class="workers--modal__form">
+                                <input type="text" placeholder="Name" name="name1" class="input">
+                                <input type="email" placeholder="Email" name="email1" class="input">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" class="ukraine-svg">
+                                    <rect width="36" height="24" fill="#0057B7"/>
+                                    <rect width="36" height="12" y="12" fill="#FFD700"/>
+                                </svg>
+                                <input type="text" placeholder="ㅤㅤㅤ+380ㅤ|ㅤPhone number" class="phone_mask input">
+                                <textarea class="input comment" placeholder="Enter text" name="" id=""></textarea>
+                            </form>
+                        </div>
+                        <button class="close-modal-btn" id="close-modal-btn">Send</button>
                     </div>
-                    <button class="close-modal-btn" id="close-modal-btn">Send</button>
-                </div>
-            </dialog>
+                </dialog>
+            </div>
+            
               <button class="show-modal-btn" id="show-modal-btn">Leave a review</button>              
         </section>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
